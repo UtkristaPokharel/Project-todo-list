@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo-list</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Todo List</h1>
+		<div class="textinput">
+			<img src="images/bar.svg" alt="bar" width="20px">
+			<input type="text" id="newtask" placeholder="Enter new task">
+		</div>
+		<div class="control">
+			<div class="filters">
+				<span id="all">all</span>
+				<span id="pending">pending</span>
+				<span id="completed">completed</span>
+			</div>
+			<button class="clear-btn">Clear all</button>
+		</div>
+		<ul id="task-box">
+			<label for="1">
+				<li class="task">
+					<input type="checkbox" id="1">
+					<p>Renew Netflix</p>
+				</label>
+			</li>
+		</ul>
+
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
