@@ -12,12 +12,63 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 	/* background-color: #ce1212; */
+}
+ul{
+	list-style: none;
 }
 
 .container {
 	background-color: #fff;
-	border: 2px solid red;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border: 2px solid #ff1f1f;
 	width: 500px;
 	height: 500px;
+	border-radius: 8px;
+	/* padding: 28px ; */
+}
+
+.task-input{
+	display: flex;
+	height: 50px;
+	/* width: 85%; */
+	padding: 0 25px;
+	position: relative;
+}
+
+.task-input input{
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+	outline: none;
+	border-radius: 5px;
+	border: 2px solid #b4b3b3;
+	padding: 0 20px 0 40px;
+}
+
+.task-input img{
+	position: absolute;
+	top: 35%;
+	left: 7%;
+}
+
+.task-input input::placeholder{
+	color: #bfbfbf;
+}
+
+.controls{
+	padding: 18px 25px;
+	border-bottom: 1px solid#b4b3b3;
+	display: flex;
+	justify-content: space-between;
+}
+
+.filters span{
+	cursor: pointer;
+	margin: 0 8px;
+	font-size: 17px;
+
 }
