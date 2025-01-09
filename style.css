@@ -13,9 +13,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	overflow: hidden;
-	/* background-color: #ce1212; */
+	background-color: #ccedf6;
 }
-ul{
+
+ul {
 	list-style: none;
 }
 
@@ -24,22 +25,30 @@ ul{
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
-	border: 2px solid #ff1f1f;
 	width: 500px;
-	height: 500px;
+	height: auto;
 	border-radius: 8px;
-	/* padding: 28px ; */
+	padding: 20px;
 }
 
-.task-input{
+.container h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ff1f1f;
+	color: #fff;
+	font-family: sans-serif;
+	height: 50px;
+}
+
+.task-input {
 	display: flex;
 	height: 50px;
-	/* width: 85%; */
 	padding: 0 25px;
 	position: relative;
 }
 
-.task-input input{
+.task-input input {
 	height: 100%;
 	width: 100%;
 	font-size: 18px;
@@ -49,26 +58,101 @@ ul{
 	padding: 0 20px 0 40px;
 }
 
-.task-input img{
+.task-input img {
 	position: absolute;
 	top: 35%;
 	left: 7%;
 }
 
-.task-input input::placeholder{
+.task-input input::placeholder {
 	color: #bfbfbf;
 }
 
-.controls{
+.controls {
 	padding: 18px 25px;
 	border-bottom: 1px solid#b4b3b3;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
+
 }
 
-.filters span{
+.filters span {
 	cursor: pointer;
-	margin: 0 8px;
+	margin: 0 10px;
 	font-size: 17px;
 
+}
+
+.filters span:first-child {
+	margin: 0;
+}
+
+.filters span.active {
+	color: #ff1f1f;
+}
+
+.controls .clear-btn {
+	padding: 7px 13px;
+	color: #fff;
+	background-color: #ff1f1f;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+#task-box {
+	margin: 20px 25px;
+}
+
+.task {
+	display: flex;
+	justify-content: space-between;
+	/* border: 2px solid red; */
+
+}
+
+.task label {
+	display: flex;
+	justify-content: space-between;
+	/* text-align: center; */
+	align-items: center;
+	width: 100%;
+	/* border: 2px solid red; */
+
+}
+
+/* .task label input {
+	margin-right: 10px;
+} */
+
+.task .addremove-btn {
+
+	color: #fff;
+	background-color: #ff1f1f;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	font-weight: bolder;
+	padding: 7px 13px;
+	/* margin-left: 300px; */
+
+}
+
+#task-box .task {
+	font-size: 17px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #b4b3b3;
+	padding-bottom: 15px;
+
+}
+
+#task-box .task:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
 }
