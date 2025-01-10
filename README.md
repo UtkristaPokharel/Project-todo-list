@@ -1,1 +1,1 @@
-Done some html css
+Started doing local storage stuffs
