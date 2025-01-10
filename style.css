@@ -29,13 +29,15 @@ ul {
 	height: auto;
 	border-radius: 8px;
 	padding: 20px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	/* Shadow effect */
 }
 
 .container h1 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #ff1f1f;
+	background-color: #434040;
 	color: #fff;
 	font-family: sans-serif;
 	height: 50px;
@@ -77,15 +79,15 @@ ul {
 
 }
 
-.filters span {
-	cursor: pointer;
-	margin: 0 10px;
-	font-size: 17px;
-
+.filters {
+	display: flex;
+	justify-content: space-between;
+	width: 50%;
 }
 
-.filters span:first-child {
-	margin: 0;
+.filters span {
+	cursor: pointer;
+	font-size: 17px;
 }
 
 .filters span.active {
@@ -100,7 +102,9 @@ ul {
 	border: none;
 	border-radius: 5px;
 	cursor: pointer;
-	font-size: 15px;
+	font-size: 17px;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+	/* Shadow effect */
 }
 
 #task-box {
@@ -128,7 +132,7 @@ ul {
 	margin-right: 10px;
 } */
 
-.task .addremove-btn {
+.task .delete-btn {
 
 	color: #fff;
 	background-color: #ff1f1f;
@@ -139,7 +143,7 @@ ul {
 	font-size: 15px;
 	font-weight: bolder;
 	padding: 7px 13px;
-	/* margin-left: 300px; */
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 
 }
 
