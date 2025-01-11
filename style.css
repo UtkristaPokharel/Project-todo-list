@@ -30,7 +30,6 @@ ul {
 	border-radius: 8px;
 	padding: 20px;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-	/* Shadow effect */
 }
 
 .container h1 {
@@ -104,7 +103,6 @@ ul {
 	cursor: pointer;
 	font-size: 17px;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-	/* Shadow effect */
 }
 
 #task-box {
@@ -114,26 +112,18 @@ ul {
 .task {
 	display: flex;
 	justify-content: space-between;
-	/* border: 2px solid red; */
-
 }
 
 .task label {
 	display: flex;
 	justify-content: space-between;
-	/* text-align: center; */
 	align-items: center;
 	width: 100%;
-	/* border: 2px solid red; */
-
 }
-.task label p.checked{
+
+.task label p.checked {
 	text-decoration: line-through;
 }
-
-/* .task label input {
-	margin-right: 10px;
-} */
 
 .task .delete-btn {
 
@@ -147,7 +137,6 @@ ul {
 	font-weight: bolder;
 	padding: 7px 13px;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-
 }
 
 #task-box .task {
@@ -155,11 +144,28 @@ ul {
 	margin-bottom: 20px;
 	border-bottom: 1px solid #b4b3b3;
 	padding-bottom: 15px;
-
 }
 
 #task-box .task:last-child {
 	margin-bottom: 0;
 	padding-bottom: 0;
 	border-bottom: none;
+}
+
+@media (max-width: 768px) {
+
+	.container h1 {
+		font-size: 18px;
+	}
+
+	.task-input input {
+		font-size: 16px;
+		/* Adjust input font size */
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		width: 90%;
+	}
 }
