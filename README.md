@@ -1,2 +1,1 @@
-Started doing local storage stuffs
-little break
+most of the things completed only delete button remaining
