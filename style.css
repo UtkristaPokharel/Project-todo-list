@@ -127,6 +127,9 @@ ul {
 	/* border: 2px solid red; */
 
 }
+.task label p.checked{
+	text-decoration: line-through;
+}
 
 /* .task label input {
 	margin-right: 10px;
